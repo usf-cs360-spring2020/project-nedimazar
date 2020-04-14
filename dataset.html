@@ -88,16 +88,29 @@
           <!-- TODO: Change page title -->
           Dataset
         </h1>
-        <p class="subtitle">
-          <!-- TODO: Change page subtitle -->
-          Dataset Page
-        </p>
+        <p>For this project, I've visualized <a href="https://datasf.org/">Data SF</a>'s <a href="https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq">Street Tree List</a> dataset.</p>
+        <p>Here's the license to the dataset by <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons</a></p>
+        <p>I accesed the dataset in April of 2020.</p>
+        <h2>What I Kept</h2>
+        <p>The original dataset contains 194K rows and 18 columns. I decided to only keep the trees which have a latitude and longitude associated with them, I also plan on doing some cleanup and grouping by species to make the data easier to analyze on a map. I might also decide to reduce it even further since after all that I still have about 60K trees in hand.</p>
 
-        <p>This would be an excellent place to describe what this page is for, what to find in different sections, describe any motivation or theme behind your visualizations, and so on.</p>
+        <h2>The columns. What do they mean?</h2>
+        <p>Currently, for my prototypes I used these columns: </p>
 
-        <p>You should not use this template unless you intend to customize it. Make it your own. Keep in mind this simple template is over 300 lines! You can see other examples of websites using Bulma at their showcase: <a href="https://bulma.io/expo/">bulma.io/expo/</a>.</p>
+        <ol>
+          <li><strong>qCaretaker:</strong> The entity in charge of taking care of the tree (Department of Public Works, private, etc...).</li>
+
+          <li><strong> PlantDate:</strong>The date the tree was planted, precise to the hour of day in some cases.</li>
+
+          <li><strong> qSpecies:</strong>A surprisingly precise field about each trees species. I really need help grouping together similar species because there are SO MANY.</li>
+
+          <li><strong> Latitude:</strong>The latitude of the trees location.</li>
+
+          <li><strong> Longitude:</strong>The longitude of the trees location.</li>
 
 
+
+        </ol>
 
       </div>
       <!-- End page content -->
