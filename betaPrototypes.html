@@ -58,12 +58,12 @@
             <span>Data</span>
           </a>
 
-          <a class="navbar-item is-active" href="prototypes.html" title="Data">
+          <a class="navbar-item" href="prototypes.html" title="Data">
             <span class="icon"><i class="fas fa-font"></i></span>
             <span>Alpha Prototypes</span>
           </a>
 
-          <a class="navbar-item" href="betaPrototypes.html" title="Beta Prototypes">
+          <a class="navbar-item is-active" href="betaPrototypes.html" title="Beta Prototypes">
             <span class="icon"><i class="fas fa-bold"></i></span>
             <span>Beta Prototypes</span>
           </a>
@@ -89,16 +89,18 @@
     <div class="container">
       <!-- Begin page content -->
       <div class="content">
-        <h1 class="title">
-          <!-- TODO: Change page title -->
-          Alpha Prototypes
-        </h1>
 
+<h2>Question</h2>
+<p>Did San Franciscans like the same trees in 2007 as they did in 1995, or was there a shift in trends?</p>
+<h2>Encoding</h2>
+<p>These are non-proportional symbol maps, where each dot represents a tree planted in San Francisco, and is colored by its species. </p>
+        <img src="img/1995.png" alt="">
+        <img src="img/2007.png" alt="">
+<h2>Answer</h2>
+<p>It seems that out of the six most common species of trees that San Franciscans planted in the above years, the tree most popular species of trees have changed (for the exception of Arbutus, which has lost some popularity over the years). However, the tree least popular species out of the six (Prunus, Pyrus, and Tristaniopsis) seem to have not changed in popularity. This shows that although we like bringing new species to our landscapes, there are still trees that we don't want to give up on.</p>
 
-        <h3>For this prototype, some categories with too few points were excluded from the visualization.</h3>
-        <img src="prototypes/caretakerMap.png" width="900" alt="">
-        <h3>This one I am thinking of grouping the species together into parent species but I don't know how to do that.</h3>
-        <img src="prototypes/stackedPlants.png" width="900" alt="">
+<h2>Planned Interactivity</h2>
+<p>I am thinking of implemented synchronized brushing for these maps, when hovering over a symbol on one map, all symbols with the same category on the other map will pop out. Other possible interactivity would be to create a single map and implement a filtering tool to be able to look at different years and different number of species. Mind that my reduced version of the dataset alone contains 158 species. Here, I am just looking at the most popular ones, excluding the fields that contain a generic species such as "Tree".</p>
 
       </div>
       <!-- End page content -->
